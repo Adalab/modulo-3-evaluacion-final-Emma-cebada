@@ -1,21 +1,15 @@
+import React from 'react';
+import api from '../services/api';
 import '../stylesheets/App.css';
 
-function App() {
+api.getDataFromApi().then(data => {
+  console.log(data);
+});
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
