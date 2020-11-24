@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import Loading from './Loading';
 import Header from './Header'
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import api from '../services/api';
+import rick from '../images/rick-no.png';
 import '../stylesheets/App.scss';
 
 const App = () => {
@@ -46,7 +47,18 @@ const App = () => {
         status={foundCharacter.status}
       />
     } else {
-      return <p>Character not found.</p>
+      return (
+        <div className="character__error">
+          <Link to="/">
+            <button className="character__error-button">Go back</button>
+          </Link>
+          <p className="character__error-paragraphRoute">Character not found.</p>
+          <img className="character__error-imageRoute"
+            src={rick}
+            alt="Character not found"
+            title="Character Alien animation"
+          />
+        </div>)
     }
   };
 

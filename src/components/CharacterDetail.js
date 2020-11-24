@@ -1,23 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../stylesheets/CharacterDetail.scss';
 
 const CharacterDetail = (props) => {
   return (
-    <div>
+    <>
       <Link to="/">
-        <button>Go back</button>
+        <button className="cardDetail__button">Go back</button>
       </Link>
-      <article>
-        <img src={props.image} alt={props.name} />
-        <h2>{props.name}</h2>
-        <ul>
-          <li>Species: {props.species}.</li>
-          <li>Planet of origin: {props.origin}.</li>
-          <li>Appears in {props.episodes.length} episode(s).</li>
-          <li>Status: {props.status}</li>
-        </ul>
+      <article className="cardDetail__container">
+        <img className="cardDetail__image" src={props.image} alt={props.name} />
+        <div className="cardDetail__name">
+          <h2 className="cardDetail__name-title">{props.name}</h2>
+          <ul className="cardDetail__list">
+            <li className="cardDetail__list-item" >Species: {props.species}.</li>
+            <li className="cardDetail__list-item" >Planet of origin: {props.origin}.</li>
+            <li className="cardDetail__list-item" >Appears in {props.episodes.length} episode(s).</li>
+            <li className="cardDetail__list-item" >Status: {props.status}</li>
+          </ul>
+        </div>
       </article>
-    </div>
+    </>
   )
 }
 

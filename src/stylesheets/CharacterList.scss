@@ -19,3 +19,20 @@
   font-family: "Architects Daughter", cursive;
   margin-bottom: 20px;
 }
+
+.character__error {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  &-paragraph {
+    font-family: "Architects Daughter", cursive;
+    color: rgb(0, 255, 242);
+    font-size: 25px;
+  }
+  &__image {
+    height: 250px;
+    @media all and (min-width: 768px) {
+      height: 350px;
+    }
+  }
+}

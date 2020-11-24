@@ -14,3 +14,35 @@ body {
     background-position: center;
   }
 }
+
+.character__error {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  &-paragraphRoute {
+    padding-top: 20px;
+    font-family: "Architects Daughter", cursive;
+    color: rgb(0, 255, 242);
+    font-size: 25px;
+  }
+  &-imageRoute {
+    padding-top: 20px;
+    height: 200px;
+    @media all and (min-width: 768px) {
+      height: 300px;
+    }
+  }
+}
+.character__error-button {
+  width: 130px;
+  padding: 10px 35px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Architects Daughter", cursive;
+  @media (min-width: 768px) {
+    margin-left: 1015px;
+  }
+}

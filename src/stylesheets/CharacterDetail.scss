@@ -1,0 +1,48 @@
+.cardDetail__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 20px;
+  border: 20px solid rgb(216, 113, 199);
+  border-radius: 10px;
+  background-color: rgb(216, 113, 199);
+  font-family: "Architects Daughter", cursive;
+  margin-top: 50px;
+  width: 400px;
+  @media all and (min-width: 768px) {
+    width: 600px;
+    height: 300px;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+}
+.cardDetail__image {
+  width: 180px;
+  border: 5px solid black;
+  @media all and (min-width: 768px) {
+    width: 250px;
+  }
+}
+.cardDetail__name {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.cardDetail__list {
+  list-style: none;
+}
+.cardDetail__button {
+  width: 130px;
+  padding: 10px 35px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Architects Daughter", cursive;
+  @media (min-width: 768px) {
+    margin-left: 1015px;
+  }
+}
