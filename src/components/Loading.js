@@ -1,7 +1,8 @@
 import React from 'react';
+import '../stylesheets/Loading.scss';
 
 const Loading = () => {
-  return <div></div>
+  return <div className="preloader"></div>
 };
 
 export default Loading;
