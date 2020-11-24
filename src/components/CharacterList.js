@@ -17,7 +17,7 @@ const CharacterList = (props) => {
   })
   return (
     <>
-      <Filters handleInputChange={props.handleInputChange} />
+      <Filters inputText={props.inputText} handleInputChange={props.handleInputChange} />
       <ul>
         {characterItem}
       </ul>

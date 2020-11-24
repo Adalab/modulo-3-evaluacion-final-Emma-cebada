@@ -56,7 +56,10 @@ const App = () => {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <CharacterList characters={filteredCharacters} handleInputChange={handleInputChange} />
+            <CharacterList
+              characters={filteredCharacters}
+              inputText={inputText}
+              handleInputChange={handleInputChange} />
           </Route>
           <Route path="/character-detail/:id" render={renderDetail} />
         </Switch>
