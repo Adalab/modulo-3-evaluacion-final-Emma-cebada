@@ -4,8 +4,12 @@ const Filters = (props) => {
   const handleInputChange = (ev) => {
     props.handleInputChange(ev.target.value);
   }
+
+  const handleSubmit = ev => {
+    ev.preventDefault();
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="name">Find a character by name:</label>
       <input type="text" name="name" id="name" placeholder="Rick Sanchez" onChange={handleInputChange} />
     </form>
