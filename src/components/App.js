@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Loading from './Loading';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import api from '../services/api';
@@ -9,11 +10,14 @@ const App = () => {
   //state
   const [characters, setCharacters] = useState([]);
   const [inputText, setInputText] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   //api
   useEffect(() => {
+    setIsLoading(true);
     api.getDataFromApi().then(data => {
       setCharacters(data);
+      setIsLoading(false);
     });
   }, []);
 
@@ -47,15 +51,17 @@ const App = () => {
 
   //paint
   return (
-    <div className="App">
-      <Switch>
-        <Route exact path="/">
-          <CharacterList characters={filteredCharacters} handleInputChange={handleInputChange} />
-        </Route>
-        <Route path="/character-detail/:id" render={renderDetail} />
-      </Switch>
-
-    </div>
+    <>
+      {isLoading === true ? <Loading /> : null}
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <CharacterList characters={filteredCharacters} handleInputChange={handleInputChange} />
+          </Route>
+          <Route path="/character-detail/:id" render={renderDetail} />
+        </Switch>
+      </div>
+    </>
   );
 }
 
