@@ -1,6 +1,7 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
 import Filters from './Filters';
+import '../stylesheets/CharacterList.scss';
 
 const CharacterList = (props) => {
   props.characters.sort((a, b) => {
@@ -17,23 +18,25 @@ const CharacterList = (props) => {
 
   const characterItem = props.characters.map((card) => {
     return (
-      <li key={card.id}>
-        <CharacterCard
-          id={card.id}
-          image={card.image}
-          name={card.name}
-          species={card.species}
-        />
-      </li>
+      <div className="classList__container">
+        <li className="classList" key={card.id}>
+          <CharacterCard
+            id={card.id}
+            image={card.image}
+            name={card.name}
+            species={card.species}
+          />
+        </li>
+      </div>
     )
   })
   return (
-    <>
+    <section className="characterList">
       <Filters inputText={props.inputText} handleInputChange={props.handleInputChange} />
-      <ul>
+      <ul className="characterList__list">
         {characterItem}
       </ul>
-    </>
+    </section>
   )
 }
 

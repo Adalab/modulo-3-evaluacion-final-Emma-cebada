@@ -1,0 +1,17 @@
+.card {
+  &__link {
+    text-decoration: none;
+  }
+  &__image {
+    width: 200px;
+    border: 2px solid black;
+  }
+  &__title {
+    color: black;
+    text-align: center;
+    width: 200px;
+  }
+  &__paragraph {
+    color: black;
+  }
+}

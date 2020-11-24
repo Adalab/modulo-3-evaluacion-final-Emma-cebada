@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Loading from './Loading';
+import Header from './Header'
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
 import api from '../services/api';
-import '../stylesheets/App.css';
+import '../stylesheets/App.scss';
 
 const App = () => {
   //state
@@ -54,6 +55,7 @@ const App = () => {
     <>
       {isLoading === true ? <Loading /> : null}
       <div className="App">
+        <Header />
         <Switch>
           <Route exact path="/">
             <CharacterList
