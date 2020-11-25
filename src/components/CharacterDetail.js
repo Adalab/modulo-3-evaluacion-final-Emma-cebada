@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import dead from '../images/dead.jpg';
 import unknown from '../images/unknown.png';
 import alive from '../images/alive.png';
@@ -33,5 +34,14 @@ const CharacterDetail = (props) => {
   )
 }
 
+CharacterDetail.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  species: PropTypes.string,
+  status: PropTypes.string,
+  origin: PropTypes.string,
+  episodes: PropTypes.number,
+}
 
 export default CharacterDetail;

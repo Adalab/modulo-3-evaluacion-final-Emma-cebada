@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CharacterCard from './CharacterCard';
 import Filters from './Filters';
 import alien from '../images/alien-no.png';
@@ -52,6 +53,10 @@ const CharacterList = (props) => {
     </section>
 
   )
+}
+
+CharacterList.propTypes = {
+  characters: PropTypes.array,
 }
 
 export default CharacterList;
