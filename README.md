@@ -1,5 +1,7 @@
 # Proyecto: Rick and Morty
 
+![alt tag](http://url/to/title.png)
+
 Web propuesta por Adalab para llevar a cabo la evaluación final del módulo 3 en el cual se aprende React. El proyecto consiste en coger mediante un fetch información determinada para ser capaz de pintar un listado de personajes de la serie en la pantalla a modo de tarjetas.
 La información a sacar en cada una de las tarjetas propuestas por Adalab es: la imagen del personaje, su nombre y si es humano o alien.
 También tenemos un detalle de personaje realizado con rutas al cual se accede clicando sobre el que quieras ver para obtener algo más de información sobre él.
