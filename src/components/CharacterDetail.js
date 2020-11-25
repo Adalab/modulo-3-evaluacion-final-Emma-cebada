@@ -41,7 +41,7 @@ CharacterDetail.propTypes = {
   species: PropTypes.string,
   status: PropTypes.string,
   origin: PropTypes.string,
-  episodes: PropTypes.number,
+  episodes: PropTypes.array,
 }
 
 export default CharacterDetail;
