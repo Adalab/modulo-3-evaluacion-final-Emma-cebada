@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.3b9be531.chunk.css",
-    "main.js": "./static/js/main.b1184998.chunk.js",
-    "main.js.map": "./static/js/main.b1184998.chunk.js.map",
+    "main.css": "./static/css/main.da1c0cb6.chunk.css",
+    "main.js": "./static/js/main.bebd0e11.chunk.js",
+    "main.js.map": "./static/js/main.bebd0e11.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.14bd5293.js",
     "runtime-main.js.map": "./static/js/runtime-main.14bd5293.js.map",
     "static/js/2.5da56e5f.chunk.js": "./static/js/2.5da56e5f.chunk.js",
     "static/js/2.5da56e5f.chunk.js.map": "./static/js/2.5da56e5f.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.3b9be531.chunk.css.map": "./static/css/main.3b9be531.chunk.css.map",
+    "static/css/main.da1c0cb6.chunk.css.map": "./static/css/main.da1c0cb6.chunk.css.map",
     "static/js/2.5da56e5f.chunk.js.LICENSE.txt": "./static/js/2.5da56e5f.chunk.js.LICENSE.txt",
     "static/media/alien-no.11619ccf.png": "./static/media/alien-no.11619ccf.png",
-    "static/media/App.scss": "./static/media/fondo.686e5d1f.jpg",
+    "static/media/alive.9ed1914d.png": "./static/media/alive.9ed1914d.png",
+    "static/media/App.scss": "./static/media/fondo.f81e736a.jpg",
+    "static/media/human.74cbb1af.png": "./static/media/human.74cbb1af.png",
     "static/media/rick-no.80dc1a7d.png": "./static/media/rick-no.80dc1a7d.png",
-    "static/media/title.de13d484.png": "./static/media/title.de13d484.png"
+    "static/media/title.de13d484.png": "./static/media/title.de13d484.png",
+    "static/media/unknown.01e76ad5.png": "./static/media/unknown.01e76ad5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.14bd5293.js",
     "static/js/2.5da56e5f.chunk.js",
-    "static/css/main.3b9be531.chunk.css",
-    "static/js/main.b1184998.chunk.js"
+    "static/css/main.da1c0cb6.chunk.css",
+    "static/js/main.bebd0e11.chunk.js"
   ]
 }
