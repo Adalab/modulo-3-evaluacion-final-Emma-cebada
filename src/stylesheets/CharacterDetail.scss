@@ -11,7 +11,8 @@
   background-color: rgb(216, 113, 199);
   font-family: "Architects Daughter", cursive;
   margin-top: 50px;
-  width: 400px;
+  width: 300px;
+  margin-bottom: 30px;
   @media all and (min-width: 768px) {
     width: 600px;
     height: 300px;
@@ -29,6 +30,7 @@
 .cardDetail__name {
   padding-top: 10px;
   padding-left: 15px;
+  text-align: center;
 }
 .cardDetail__list {
   list-style: none;

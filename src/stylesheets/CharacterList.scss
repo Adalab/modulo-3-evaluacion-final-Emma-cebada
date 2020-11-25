@@ -18,6 +18,9 @@
   background-color: rgb(216, 113, 199);
   font-family: "Architects Daughter", cursive;
   margin-bottom: 20px;
+  :hover {
+    transform: translateY(-10px);
+  }
 }
 
 .character__error {
@@ -28,6 +31,7 @@
     font-family: "Architects Daughter", cursive;
     color: rgb(0, 255, 242);
     font-size: 25px;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   }
   &__image {
     height: 250px;
