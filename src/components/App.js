@@ -56,7 +56,7 @@ const App = () => {
           <img className="character__error-imageRoute"
             src={rick}
             alt="Character not found"
-            title="Character Alien animation"
+            title="Character Rick animation"
           />
         </div>)
     }
