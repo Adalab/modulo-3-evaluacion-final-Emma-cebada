@@ -14,7 +14,7 @@ const CharacterDetail = (props) => {
         <button className="cardDetail__button">Go back</button>
       </Link>
       <article className="cardDetail__container">
-        <img className="cardDetail__image" src={props.image} alt={props.name} />
+        <img className="cardDetail__image" src={props.image} alt={props.name} title={props.name} />
         <div className="cardDetail__name">
           <h2 className="cardDetail__name-title">{props.name}</h2>
           <ul className="cardDetail__list">
