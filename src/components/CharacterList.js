@@ -35,7 +35,10 @@ const CharacterList = (props) => {
   })
   return (
     <section className="characterList">
-      <Filters inputText={props.inputText} handleInputChange={props.handleInputChange} />
+      <Filters inputText={props.inputText} handleInputChange={props.handleInputChange}
+        inputTypeText={props.inputTypeText}
+        handleInputTypeChange={props.handleInputTypeChange}
+      />
       {characterItem.length !== 0 ? (
         <ul className="characterList__list">
           {characterItem}

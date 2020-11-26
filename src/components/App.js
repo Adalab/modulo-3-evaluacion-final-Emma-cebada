@@ -13,6 +13,7 @@ const App = () => {
   const [characters, setCharacters] = useState([]);
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [inputTypeText, setInputTypeText] = useState('');
 
   //api
   useEffect(() => {
@@ -28,9 +29,18 @@ const App = () => {
     setInputText(inputText);
   };
 
+  const handleInputTypeChange = inputTypeText => {
+    setInputTypeText(inputTypeText);
+  }
+
   const filteredCharacters = characters.filter(character => {
     return character.name.toUpperCase().includes(inputText.toUpperCase());
-  });
+  })
+    .filter(character => {
+      return character.type.toUpperCase().includes(inputTypeText.toUpperCase());
+    });
+
+
 
   const renderDetail = props => {
     const routeCharacterId = parseInt(props.match.params.id);
@@ -73,7 +83,10 @@ const App = () => {
             <CharacterList
               characters={filteredCharacters}
               inputText={inputText}
-              handleInputChange={handleInputChange} />
+              inputTypeText={inputTypeText}
+              handleInputChange={handleInputChange}
+              handleInputTypeChange={handleInputTypeChange}
+            />
           </Route>
           <Route path="/character-detail/:id" render={renderDetail} />
         </Switch>
